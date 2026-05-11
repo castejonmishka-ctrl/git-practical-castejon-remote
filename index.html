@@ -17,4 +17,18 @@
     <button id="btn1">alert me</button>
     <button id="btn2">change color</button>
 </body>
+<script>
+     const parag1 = document.getElementById("parag1");
+        console.log(parag1.textContent);
+
+     const btn1 = document.querySelector(".btn1");
+        btn1.forEach((btn, index) => {
+            console.log(`btn1 ${index + 1}:`, btn.textContent);
+        });
+    
+     const btn2 = document.querySelector(".btn2");
+        btn2.forEach((btn,index) => {
+            console.log(`btn2 ${index + 1}`,btn.text.Content);
+        });
+</script>
 </html>
