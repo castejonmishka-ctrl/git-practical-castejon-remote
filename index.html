@@ -21,14 +21,22 @@
      const parag1 = document.getElementById("parag1");
         console.log(parag1.textContent);
 
-     const btn1 = document.querySelector(".btn1");
+     const btn1 = document.querySelector("btn1");
         btn1.forEach((btn, index) => {
             console.log(`btn1 ${index + 1}:`, btn.textContent);
         });
     
-     const btn2 = document.querySelector(".btn2");
+     const btn2 = document.querySelector("btn2");
         btn2.forEach((btn,index) => {
             console.log(`btn2 ${index + 1}`,btn.text.Content);
+        });
+    
+      btn1.addEventListener('click', function () {
+            alert('Button 1 triggered');
+        });
+
+      btn2.addEventListener('dblclick', function () {
+            parag1.style.color = 'red';
         });
 </script>
 </html>
